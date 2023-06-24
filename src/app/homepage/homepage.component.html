@@ -1,50 +1,41 @@
-<!-- * Navbar layout -->
-
+<!-- Navbar layout -->
 <div class="navbar bg-base-100">
-    <img src="assets/logo.png" alt="Logo" class="logo-image" />
-    <div class="navbar-nav flex-1">
-      <!-- <form class="form-inline d-flex" (ngSubmit)="searchDestinations()">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-          name="search"
+  <img src="assets/logo.png" alt="Logo" class="logo-image" />
+  <div class="navbar-nav flex-1">
+    <form class="form-inline d-flex" (ngSubmit)="searchDestinations()">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        name="search"
         [(ngModel)]="searchQuery"
-        /> -->
-        <button class="btn btn-outline-success btn-m my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      <!-- </form> -->
-    </div>
-  
-    <div class="navbar-nav flex-none">
-      <ul class="menu menu-horizontal px-1">
-        <li><a routerLink="/home">Home</a></li>
-        <li>
-            <details id="details">   <!--collapsable section -->
-               <summary>Destinations</summary>
-               <ul class="bg-base-100 ul" style="z-index: 10;"> 
-                 <!-- <li id="li" *ngFor="let ds of destinationslists"><a [routerLink]="['destinationlist/:destinationlistId', 
-                   {destinationlistId: ds.listId, listName: ds.listName}]">{{ds.listName}}</a></li> -->
-               </ul>
-             </details>
-           </li>
-
-           <!-- <details id="details">  
-            <summary>watchlists</summary>
-            <ul class="bg-base-100 ul" style="z-index: 10;"> 
-              <li id="li" *ngFor="let wl of watchlists"><a [routerLink]="['watchlist/:watchlistId', 
-                {watchlistId: wl.listId, listName: wl.listName}]">{{wl.listName}}</a></li>
-            </ul>
-          </details>
-        </li> -->
-
-        <li><a routerLink="/reviews">Reviews</a></li>
-
-
-
-      </ul>
-    </div>
+      />
+      <button class="btn btn-outline-success btn-m my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
   </div>
-  <!-- <router-outlet></router-outlet> -->
+
+  <div class="navbar-nav flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a routerLink="/home">Home</a></li>
+      <li>
+        <details id="details"> <!-- Collapsible section -->
+          <summary>Destinations</summary>
+          <ul class="bg-base-100 ul" style="z-index: 10;">
+            <li id="li" *ngFor="let ds of destinations">
+              <a [routerLink]="['/destination']" [queryParams]="{ country: ds.country }">{{ ds.country }}</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li><a routerLink="/reviews">Reviews</a></li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+
+
