@@ -1,5 +1,5 @@
 .logo-image {
-    max-height: 7rem; 
+    max-height: 4.6rem; 
     max-width: 100%; 
     margin-left: 4rem;
 
@@ -15,11 +15,38 @@
     border-color: green;
   }
   
-  
   .submenu {
     display: none;
   }
-  
   .submenu.show {
     display: block;
   }
+
+  .navbar {
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+ img {
+ height: 100%;
+  }
+
+
+  .about-text {
+    margin-top: 10px;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+  }
+
+  .about-text:first-child {
+    margin-top: 0;
+  }
+
+  .message {
+    font-family: sans-serif;
+  }
+  .heading1,
+  .heading2,
+  .heading3,
+  .about-text {
+    font-family: sans-serif;
+  } 

@@ -9,8 +9,11 @@ import { Router } from '@angular/router';
 })
 export class HomepageComponent {
   destinations: any[] = [
-    { country: 'Country 1' },
-    { country: 'Country 2' },
+    { country: 'Aruba' },
+    { country: 'Barbados' },
+    { country: 'Curacao' },
+    { country: 'Jamaica' },
+    { country: 'St. Lucia' }
     // Add more destination objects as needed
   ];
   searchQuery: string = '';

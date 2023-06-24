@@ -12,13 +12,15 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
 
      HomepageComponent,
      DestinationsComponent,
-     ReviewsComponent
+     ReviewsComponent,
+
   ],
   imports: [
     BrowserModule,
