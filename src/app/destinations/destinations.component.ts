@@ -17,8 +17,11 @@ export class DestinationsComponent {
     private router: Router
   ) {
     this.destinations = [
-      { country: 'Country 1' },
-      { country: 'Country 2' }
+      { country: 'Aruba' },
+      { country: 'Barbados' },
+      { country: 'Curacao' },
+      { country: 'Jamaica' },
+      { country: 'St. Lucia' }
       // Add more destination objects as needed
     ];
 

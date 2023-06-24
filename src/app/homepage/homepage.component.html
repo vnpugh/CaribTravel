@@ -4,14 +4,14 @@
   <div class="navbar-nav flex-1">
     <form class="form-inline d-flex" (ngSubmit)="searchDestinations()">
       <input
-        class="form-control mr-sm-2"
+        class="form-control form-control-sm mr-sm-2"
         type="search"
         placeholder="Search"
         aria-label="Search"
         name="search"
         [(ngModel)]="searchQuery"
       />
-      <button class="btn btn-outline-success btn-m my-2 my-sm-0" type="submit">
+      <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit">
         Search
       </button>
     </form>

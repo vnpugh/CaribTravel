@@ -5,10 +5,16 @@
 
   }
   .btn {
-    border-color: green;
+    border-color: blue;
      margin-left: 0.5rem;
-    color: green;
+    color: blue;
   }
+  .btn:hover {
+    color: #fff;
+    background-color: green;
+    border-color: green;
+  }
+  
   
   .submenu {
     display: none;
