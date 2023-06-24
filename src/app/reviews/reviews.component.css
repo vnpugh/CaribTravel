@@ -1,0 +1,29 @@
+.logo-image {
+    max-height: 4.6rem; 
+    max-width: 100%; 
+    margin-left: 4rem;
+
+  }
+  .btn {
+    border-color: blue;
+     margin-left: 0.5rem;
+    color: blue;
+  }
+  .btn:hover {
+    color: #fff;
+    background-color: green;
+    border-color: green;
+  }
+  
+  .submenu {
+    display: none;
+  }
+  .submenu.show {
+    display: block;
+  }
+
+  .navbar {
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+ 
