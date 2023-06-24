@@ -42,11 +42,26 @@
   }
 
   .message {
-    font-family: sans-serif;
+    font-family: Caprasimo;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
   }
+
   .heading1,
   .heading2,
-  .heading3,
+  .heading3 {
+    font-family: Caprasimo;
+    font-size: 1.3rem;
+    text-align: justify;
+
+  }
+  
   .about-text {
-    font-family: sans-serif;
-  } 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.container{
+  margin-left: 9rem;
+  padding-right: 10rem;
+  margin-right: 3rem;
+}

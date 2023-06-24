@@ -2,7 +2,7 @@
  @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Martel&display=swap');
 
-html, body { height: 100%; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+html, body { height: 100%; font-family: Caprasimo; }
 
 
 
